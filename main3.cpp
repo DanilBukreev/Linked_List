@@ -135,7 +135,7 @@ int main(int argc, char *argv[]) {
       case '7':
         cout << "Вы хотите выйти из программы ? (y,N):" << endl;
         cin >> s;
-        if ( (s =="yes") || (s == "YES") || (s == "Yes") || (s == "Y") || (s ==                                                                                            $
+        if ( (s =="yes") || (s == "YES") || (s == "Yes") || (s == "Y") || (s == "y"))                                                                                           
          cout << "Всего доброго!" << endl;
         break;
       default:
