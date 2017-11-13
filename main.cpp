@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 #include <cstdlib>
 #include <ctime>
 #include <string>
@@ -15,12 +14,12 @@ struct node {
 template <typename T>
 class List {
  public:
-  virtual void init() {}
-  virtual void print() {}
-  virtual void Append(T elem) {}
-  virtual void Prepend(T elem) {}
-  virtual void InsertAt(int index, T elem) {}
-  virtual void Remove(T elem) {}
+   void init() {}
+   void print() {}
+   void Append(T elem) {}
+   void Prepend(T elem) {}
+   void InsertAt(int index, T elem) {}
+   void Remove(T elem) {}
 };
 template <typename T>
 class ArrayList : public List<T> {
