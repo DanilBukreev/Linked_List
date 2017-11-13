@@ -34,12 +34,10 @@ template <typename T>
 class ListList : public List<T> {
  public:
   int N;
-  // node <T> *fst = new node <T>;
   node<T> *fst;
   node<T> *lst;
   ListList() {
     fst = new node<T>;
-    // fst->ptr= NULL;
     fst->next = NULL;
     fst->prev = NULL;
     lst = new node<T>;
