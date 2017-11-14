@@ -76,6 +76,9 @@ class ListList : public List<T> {
       cout << temp->field << "->" << endl;
       temp = temp->next;
     }
+    if (N==0) {
+	   cout <<"Список пуст" << endl;
+	}
   }
   void Prepend(T elem) {
     int i;
