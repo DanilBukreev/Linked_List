@@ -186,9 +186,14 @@ int main() {
           }
           case 3: {
             int elem;
+            int N;
             cout << "Какой элемент будем удалять?" << endl;
             cin >> elem;
-            A.Remove(elem);
+             if ((elem > N) or (elem < 0))
+             cout << "error" << endl;
+             else {
+               A.Remove(elem);
+            }
             break;
           }
           case 1: {
