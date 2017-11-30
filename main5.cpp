@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
 using namespace std;
 
 template <typename T>
@@ -38,8 +39,11 @@ class ListList {
     }
   }
   void print() {
-    cout << "Текущий список:" << endl;
     node<T> *temp = fst;
+     if (N == 0) {
+      cout << "Список пуст" << endl;
+      exit(1);
+    }
     do {
       for (int i = 0; i < N; i++) {
         cout << temp->field;
@@ -49,9 +53,7 @@ class ListList {
         temp = temp->next;
       }
     } while (temp != NULL);
-    if (N == 0) {
-      cout << "Список пуст" << endl;
-    }
+   
   }
   void Prepend(T elem) {
     int i;
